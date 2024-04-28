@@ -12,4 +12,9 @@ public class HelloServlet extends HttpServlet {
         // flush强制输出:
         pw.flush();
     }
+//添加doPost方法
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        doGet(req, resp);
+    }
 }
